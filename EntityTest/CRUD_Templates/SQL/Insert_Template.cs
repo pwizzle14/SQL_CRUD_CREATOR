@@ -13,10 +13,10 @@ namespace EntityTest
 		{
 			ColumData = tableData;
 
-			ColumNames = CreateColumnNames(ColumData);
+			ColumNames = CreateColumnNames(ColumData, true);
 			SprocName = $"{tableName}_Create";
 			TableName = tableName;
-			Parameters = CreateParameters(ColumData, false);
+			Parameters = CreateParameters(ColumData, false,true);
 			PrimaryKey = ColumData.Where(x => x.IsIdentity == true).FirstOrDefault().ColumnName;
 		}
 

@@ -38,8 +38,14 @@ namespace EntityTest
             //Console.WriteLine("Enter Connectionstring: ");
             //var connectionString = Console.ReadLine();
 
-            Console.WriteLine("Enter The Table Name: ");
+            Console.WriteLine("Enter The Table Name or Q to quit: ");
             var tableName = Console.ReadLine();
+
+            if(tableName.ToLower() == "q")
+            {
+                CloseApplication();
+            }
+
             Console.WriteLine($"Looking for Name: {tableName}");
 
             //go look for the table details
@@ -97,6 +103,15 @@ namespace EntityTest
             {
                 Run();
             }
+            else
+            {
+                CloseApplication();
+            }
+        }
+
+        public static void CloseApplication()
+        {
+            Environment.Exit(0);
         }
 
         public static void CreateTextFile(string text, string tableName)

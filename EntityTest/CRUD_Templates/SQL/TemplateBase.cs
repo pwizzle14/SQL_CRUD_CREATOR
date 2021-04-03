@@ -57,11 +57,16 @@ namespace EntityTest
             }
         }
 
-        public string CreateColumnNames(ReadOnlyCollection<DbColumn> colData)
+        public string CreateColumnNames(ReadOnlyCollection<DbColumn> colData,bool excludePk = false )
         {
             StringBuilder stb = new StringBuilder();
+            var res = colData.ToList();
+            if(excludePk)
+            {
+                res = colData.Where(x => x.IsIdentity == false).ToList();
+            }
 
-            foreach (var col in colData)
+            foreach (var col in res)
             {
                 stb.Append($"{TAB},{col.ColumnName}{LINE_BREAK}");
 
@@ -74,19 +79,22 @@ namespace EntityTest
             return stb.ToString();
         }
 
-        public string CreateParameters(ReadOnlyCollection<DbColumn> colData, bool primaryKeyOnly = false)
+        public string CreateParameters(ReadOnlyCollection<DbColumn> colData, bool primaryKeyOnly = false, bool excludePk = false)
         {
+            var res = colData.ToList();
+
             if (primaryKeyOnly)
             {
                 //Find the PK
-                var res = colData.Where(x => x.IsIdentity == true).ToList();
-
-                return CreateParameters(res.ToList());
+                res = colData.Where(x => x.IsIdentity == true).ToList();
+            }
+            else if (excludePk)
+            {
+                res = colData.Where(x => x.IsIdentity == false).ToList();
             }
 
-            return CreateParameters(colData.ToList());
+            return CreateParameters(res);
         }
-
         private string CreateParameters(List<DbColumn> colData)
         {
 
