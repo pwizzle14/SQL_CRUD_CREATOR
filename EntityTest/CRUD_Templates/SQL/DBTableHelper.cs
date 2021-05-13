@@ -14,7 +14,7 @@ namespace EntityTest
 
         public static ReadOnlyCollection<DbColumn> ReadPropertiesFromTable(string tableName, string connectionString)
         {
-            string strSQL = $"SELECT * FROM {tableName}";
+            string strSQL = $"SELECT TOP 1 * FROM {tableName}";
 
             // Assumes connectionString is a valid connection string.  
             using (SqlConnection connection = new SqlConnection(connectionString))

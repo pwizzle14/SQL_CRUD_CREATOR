@@ -7,6 +7,8 @@ namespace EntityTest
 {
     class Program
     {
+        public static string TableDelimiter = ";";
+
         static void Main(string[] args)
         {
             try
@@ -38,7 +40,7 @@ namespace EntityTest
             //Console.WriteLine("Enter Connectionstring: ");
             //var connectionString = Console.ReadLine();
 
-            Console.WriteLine("Enter The Table Name or Q to quit: ");
+            Console.WriteLine($"Enter The Table Name(s) or Q to quit (If entering muliple tables use \'{TableDelimiter}\' as the delimiter. '): ");
             var tableName = Console.ReadLine();
 
             if(tableName.ToLower() == "q")
@@ -49,7 +51,7 @@ namespace EntityTest
             Console.WriteLine($"Looking for Name: {tableName}");
 
             //go look for the table details
-            var connectionString = "Server=tcp:goldenvale.database.windows.net,1433;Initial Catalog=splash;Persist Security Info=False;User ID=dom;Password=kingsTown1418;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var connectionString = "Server=tcp:goldenvale.database.windows.net,1433;Initial Catalog=HireLiberia;Persist Security Info=False;User ID=dom;Password=getBackUp21;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             //var tableName = "Users";
 
             var colData = DBTableHelper.ReadPropertiesFromTable(tableName, connectionString);
