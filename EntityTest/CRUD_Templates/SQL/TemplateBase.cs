@@ -6,7 +6,7 @@ using System.Text;
 using System.Linq;
 
 
-namespace EntityTest
+namespace DomsScriptCreator
 {
     public class TemplateBase
     {

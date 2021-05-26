@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 
-namespace EntityTest
+namespace DomsScriptCreator
 {
     public class Delete_Template: TemplateBase
     {
@@ -14,7 +14,7 @@ namespace EntityTest
 			ColumData = tableData;
 
 			ColumNames = CreateColumnNames(ColumData);
-			SprocName = $"{tableName}_Delete";
+			SprocName = GetSprocName(tableName);
 			TableName = tableName;
 			Parameters = CreateParameters(ColumData, true);
 			PrimaryKey = ColumData.Where(x => x.IsIdentity == true).FirstOrDefault().ColumnName;
@@ -31,6 +31,12 @@ namespace EntityTest
 
 
 			return text;
+		}
+
+		public static string GetSprocName(string tableName)
+        {
+			return $"{tableName}_Delete";
+
 		}
 
 	}

@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using System.Data.Common;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace EntityTest
+
+namespace DomsScriptCreator
 {
     class Program
     {
@@ -34,6 +37,8 @@ namespace EntityTest
             Console.WriteLine();
         }
 
+       
+
         public static void Run()
         {
            
@@ -51,7 +56,7 @@ namespace EntityTest
             Console.WriteLine($"Looking for Name: {tableName}");
 
             //go look for the table details
-            var connectionString = "Server=tcp:goldenvale.database.windows.net,1433;Initial Catalog=HireLiberia;Persist Security Info=False;User ID=dom;Password=getBackUp21;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var connectionString = "Server=tcp:goldenvale.database.windows.net,1433;Initial Catalog=HireLiberia;Persist Security Info=False;User ID=dom;Password=kingsTown1418;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             //var tableName = "Users";
 
             var colData = DBTableHelper.ReadPropertiesFromTable(tableName, connectionString);
@@ -67,6 +72,37 @@ namespace EntityTest
                 return;
 
             }
+
+            Console.WriteLine("Enter 1 to generate scripts only");
+            Console.WriteLine("Enter 2 to generate Class only");
+            Console.WriteLine("Enter 3 to generate both scripts and class only");
+
+            var input = Console.ReadLine();
+
+            var className = string.Empty;
+            var objectName = string.Empty;
+
+
+            switch(input)
+            {
+                case "2":
+                    {
+
+                        Console.WriteLine("Enter class Name: ");
+                        className = Console.ReadLine();
+
+                        Console.WriteLine("Enter Object Name: ");
+                        objectName = Console.ReadLine();
+
+                        CreateClass(colData, tableName, className, objectName);
+                        break;
+                    }
+
+            
+            }
+
+            return;
+
 
             Console.WriteLine("Creating Fetch script");
             Fetch_Template fetchTemplate = new Fetch_Template(colData, tableName);
@@ -111,15 +147,46 @@ namespace EntityTest
             }
         }
 
+        public static void CreateClass(ReadOnlyCollection<DbColumn> tableData, string tableName, string className, string objectName)
+        {
+            ClassGenerator gen = new ClassGenerator(tableData, tableName, className, objectName);
+
+            var result = string.Empty;
+
+            result += gen.GetUsingStatements();
+            result += gen.GetPrivateProperities();
+            result += gen.GetPublicProperties();
+            result += gen.GetCreateMethod();
+            result += gen.GetUpdateMethod();
+            result += gen.GetDeleteMethod();
+            result += gen.GetFetchByIdMethod();
+            result += gen.GetCloseClass();
+
+
+            CreateTextFile(result, tableName, true);
+
+        }
+
         public static void CloseApplication()
         {
             Environment.Exit(0);
         }
 
-        public static void CreateTextFile(string text, string tableName)
+        public static void CreateTextFile(string text, string tableName, bool buildClass = false)
         {
+
             string directory = $@"C:\DomScriptCreator";
-            string filePath = $@"{directory}\{tableName}_SQLScripts.sql";
+            string filePath = string.Empty;
+
+            if (buildClass)
+            {
+                filePath = $@"{directory}\{tableName}.cs";
+            }
+            else
+            {
+                filePath = $@"{directory}\{tableName}_SQLScripts.sql";
+            }
+            
 
             //check for directory
             if(!Directory.Exists(directory))
@@ -137,7 +204,5 @@ namespace EntityTest
                 sw.WriteLine(text);
             }
         }
-
-
     }
 }

@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 
-namespace EntityTest
+namespace DomsScriptCreator
 {
     public class Fetch_Template: TemplateBase
     {
@@ -17,7 +17,7 @@ namespace EntityTest
 			_columData = tableData;
 
 			ColumNames = CreateColumnNames(_columData);
-			SprocName = $"{tableName}_Fetch";
+			SprocName = GetSprocName(tableName);
 			TableName = tableName;
 			Parameters = CreateParameters(_columData, true);
 			PrimaryKey = _columData.Where(x => x.IsIdentity == true).FirstOrDefault().ColumnName;
@@ -50,6 +50,11 @@ namespace EntityTest
 
 			return text;
 
+		}
+
+		public static string GetSprocName(string tableName)
+        {
+			return $"{tableName}_Fetch";
 		}
     }
 }

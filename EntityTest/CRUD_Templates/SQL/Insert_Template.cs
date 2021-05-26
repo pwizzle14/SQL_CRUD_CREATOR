@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 
-namespace EntityTest
+namespace DomsScriptCreator
 {
     public class Insert_Template: TemplateBase
     {
@@ -14,7 +14,7 @@ namespace EntityTest
 			ColumData = tableData;
 
 			ColumNames = CreateColumnNames(ColumData, true);
-			SprocName = $"{tableName}_Create";
+			SprocName = GetSprocName(tableName);
 			TableName = tableName;
 			Parameters = CreateParameters(ColumData, false,true);
 			PrimaryKey = ColumData.Where(x => x.IsIdentity == true).FirstOrDefault().ColumnName;
@@ -33,6 +33,11 @@ namespace EntityTest
 
 			return text;
         }
+		 public static string GetSprocName(string tableName)
+        {
+			return $"{tableName}_Create";
+        }
+		
 
 	}
 }

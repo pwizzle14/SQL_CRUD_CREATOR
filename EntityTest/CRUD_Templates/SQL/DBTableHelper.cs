@@ -7,7 +7,7 @@ using System.Text;
 using System.Collections.ObjectModel;
 using System.Data.Common;
 
-namespace EntityTest
+namespace DomsScriptCreator
 {
     public class DBTableHelper
     {
