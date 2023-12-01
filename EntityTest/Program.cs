@@ -56,7 +56,6 @@ namespace DomsScriptCreator
             Console.WriteLine($"Looking for Name: {tableName}");
 
             //go look for the table details
-            var connectionString = "Server=tcp:goldenvale.database.windows.net,1433;Initial Catalog=HireLiberia;Persist Security Info=False;User ID=dom;Password=kingsTown1418;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             //var tableName = "Users";
 
             var colData = DBTableHelper.ReadPropertiesFromTable(tableName, connectionString);
