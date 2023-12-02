@@ -12,5 +12,6 @@
 
   <ItemGroup>
     <Folder Include="CRUD_Templates\Object\" />
+    <Folder Include="DAL\" />
   </ItemGroup>
 </Project>

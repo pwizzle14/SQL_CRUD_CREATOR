@@ -6,28 +6,22 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.Data.Common;
+using DomsScriptCreator.DAL;
 
 namespace DomsScriptCreator
 {
     public class DBTableHelper
     {
-
-        public static ReadOnlyCollection<DbColumn> ReadPropertiesFromTable(string tableName, string connectionString)
+        private IDatabaseService _databaseService = null;
+        
+        public DBTableHelper(IDatabaseService databaseService)
         {
-            string strSQL = $"SELECT TOP 1 * FROM {tableName}";
+            _databaseService = databaseService;
+        }
 
-            // Assumes connectionString is a valid connection string.  
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-
-                SqlCommand command = new SqlCommand(strSQL, connection);
-
-                connection.Open();
-                var reader = command.ExecuteReader();
-                var dt = reader.GetColumnSchema();
-
-                return dt;
-            }
+        public ReadOnlyCollection<DbColumn> ReadPropertiesFromTable(string tableName, string connectionString)
+        {
+            return _databaseService.ReadPropertiesFromTable(tableName);
         }
     }
 

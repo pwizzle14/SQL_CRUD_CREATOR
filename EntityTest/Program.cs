@@ -100,8 +100,6 @@ namespace DomsScriptCreator
             
             }
 
-            return;
-
 
             Console.WriteLine("Creating Fetch script");
             Fetch_Template fetchTemplate = new Fetch_Template(colData, tableName);
