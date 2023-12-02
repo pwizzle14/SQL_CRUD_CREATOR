@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomsScriptCreator.CRUD_Templates.SQL;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Common;
@@ -7,8 +8,8 @@ using System.Text;
 
 namespace DomsScriptCreator
 {
-    public class Insert_Template: TemplateBase
-    {
+    public class Insert_Template: TemplateBase, iTemplate
+	{
 		public Insert_Template(ReadOnlyCollection<DbColumn> tableData, string tableName)
 		{
 			ColumData = tableData;

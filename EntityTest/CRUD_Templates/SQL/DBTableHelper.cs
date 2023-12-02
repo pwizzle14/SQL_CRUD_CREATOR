@@ -12,15 +12,12 @@ namespace DomsScriptCreator
 {
     public class DBTableHelper
     {
-        private IDatabaseService _databaseService = null;
-        
-        public DBTableHelper(IDatabaseService databaseService)
+        private static IDatabaseService _databaseService = null;  
+
+        public static ReadOnlyCollection<DbColumn> ReadPropertiesFromTable(string tableName, IDatabaseService databaseService)
         {
             _databaseService = databaseService;
-        }
 
-        public ReadOnlyCollection<DbColumn> ReadPropertiesFromTable(string tableName, string connectionString)
-        {
             return _databaseService.ReadPropertiesFromTable(tableName);
         }
     }
