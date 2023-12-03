@@ -1139,24 +1139,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/dom/.nuget/packages/": {}
+    "C:\\Users\\ddavi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj",
+      "projectUniqueName": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
       "projectName": "DomsScriptCreator",
-      "projectPath": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj",
-      "packagesPath": "/Users/dom/.nuget/packages/",
-      "outputPath": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/obj/",
+      "projectPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
+      "packagesPath": "C:\\Users\\ddavi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/dom/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ddavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1194,12 +1201,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.22, 3.1.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

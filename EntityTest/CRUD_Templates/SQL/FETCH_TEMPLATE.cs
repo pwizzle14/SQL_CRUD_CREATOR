@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomsScriptCreator.CRUD_Templates.SQL;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Common;
@@ -7,8 +8,8 @@ using System.Text;
 
 namespace DomsScriptCreator
 {
-    public class Fetch_Template: TemplateBase
-    {
+    public class Fetch_Template: TemplateBase, iTemplate
+	{
 		ReadOnlyCollection<DbColumn> _columData;
 		
 		

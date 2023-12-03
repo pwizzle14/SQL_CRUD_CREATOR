@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomsScriptCreator.CRUD_Templates.SQL;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Common;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace DomsScriptCreator
 {
-    public class Delete_Template: TemplateBase
+    public class Delete_Template: TemplateBase, iTemplate
     {
 		public Delete_Template(ReadOnlyCollection<DbColumn> tableData, string tableName)
 		{
