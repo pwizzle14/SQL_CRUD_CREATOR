@@ -1,4 +1,4 @@
-﻿using DomsScriptCreator.DAL;
+using DomsScriptCreator.DAL;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,3 +10,4 @@ namespace DomsScriptCreator.BL
         void CreateAllClassObjAndSQL();
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using DomsScriptCreator.CRUD_Templates.SQL;
+using DomsScriptCreator.CRUD_Templates.SQL;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
