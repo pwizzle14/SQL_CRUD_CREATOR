@@ -1,13 +1,12 @@
-using DomsScriptCreator.DAL;
+﻿using SqlCrudCreatorCore.DAL;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DomsScriptCreator.BL
+namespace SqlCrudCreatorCore.BL
 {
     public interface iSqlCrudCreator
     {
         void CreateAllClassObjAndSQL();
     }
 }
-

@@ -1,30 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj": {}
+    "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj": {}
   },
   "projects": {
-    "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj": {
+    "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj",
+        "projectUniqueName": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
         "projectName": "DomsScriptCreator",
-        "projectPath": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/DomsScriptCreator.csproj",
-        "packagesPath": "/Users/dom/.nuget/packages/",
-        "outputPath": "/Users/dom/Downloads/SQL_CRUD_CREATOR-master/EntityTest/obj/",
+        "projectPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
+        "packagesPath": "C:\\Users\\ddavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/dom/.config/NuGet/NuGet.Config"
+          "C:\\Users\\ddavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +41,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -62,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

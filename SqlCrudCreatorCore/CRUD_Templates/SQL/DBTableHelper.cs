@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -6,9 +6,9 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.Data.Common;
-using DomsScriptCreator.DAL;
+using SqlCrudCreatorCore.DAL;
 
-namespace DomsScriptCreator
+namespace SqlCrudCreatorCore
 {
     public class DBTableHelper
     {

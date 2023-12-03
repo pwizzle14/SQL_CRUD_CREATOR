@@ -1,4 +1,4 @@
-using DomsScriptCreator.CRUD_Templates.SQL;
+﻿using SqlCrudCreatorCore.CRUD_Templates.SQL;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,7 +6,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 
-namespace DomsScriptCreator
+namespace SqlCrudCreatorCore
 {
     public class Insert_Template: TemplateBase, iTemplate
 	{

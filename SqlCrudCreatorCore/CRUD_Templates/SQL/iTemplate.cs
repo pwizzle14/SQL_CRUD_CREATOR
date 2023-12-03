@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DomsScriptCreator.CRUD_Templates.SQL
+namespace SqlCrudCreatorCore.CRUD_Templates.SQL
 {
     public interface iTemplate
     {

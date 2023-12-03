@@ -1,5 +1,5 @@
-using DomsScriptCreator.CRUD_Templates.SQL;
-using DomsScriptCreator.DAL;
+﻿using SqlCrudCreatorCore.CRUD_Templates.SQL;
+using SqlCrudCreatorCore.DAL;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Data.Common;
 using System.IO;
 using System.Text;
 
-namespace DomsScriptCreator.BL
+namespace SqlCrudCreatorCore.BL
 {
     public class SqlCrudCreator : iSqlCrudCreator
     {
