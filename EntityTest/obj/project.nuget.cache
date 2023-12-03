@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZO/wG4hriI7ok2Y5u0ApYW99rGYQ1i6a2kR7aueIZyalvoTPIjE/N4J797h8dZnVXCucksbi6Xf2k6qXA7g8cw==",
+  "dgSpecHash": "U3u8OsnsdWfv9h6xn27kEpNsjGU5gfbbuVA6qZ4QeiR9tLDB3AJpk8VOhyY5ofBYJZQbKW0HmAL1ihEbJUVIHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
+  "projectFilePath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ddavi\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ddavi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -24,11 +24,7 @@
     "C:\\Users\\ddavi\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
     "C:\\Users\\ddavi\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
     "C:\\Users\\ddavi\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\ddavi\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\ddavi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
-    "C:\\Users\\ddavi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\ddavi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ddavi\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\ddavi\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

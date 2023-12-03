@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj": {}
+    "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj": {
+    "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\SqlCrudCreatorCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
-        "projectName": "DomsScriptCreator",
-        "projectPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj",
+        "projectUniqueName": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\SqlCrudCreatorCore.csproj",
+        "projectName": "SqlCrudCreatorCore",
+        "projectPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\SqlCrudCreatorCore.csproj",
         "packagesPath": "C:\\Users\\ddavi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\obj\\",
+        "outputPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -41,16 +41,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "EntityFramework": {
+            "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "System.Data.OleDb": {
-              "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -63,24 +59,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.22, 3.1.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -90,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj": {
+    "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj",
+        "projectUniqueName": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj",
         "projectName": "SQL_CRUD_CREATOR_TESTS",
-        "projectPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj",
+        "projectPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\SQL_CRUD_CREATOR_TESTS.csproj",
         "packagesPath": "C:\\Users\\ddavi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\obj\\",
+        "outputPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SQL_CRUD_CREATOR_TESTS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,18 +86,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj": {
-                "projectPath": "C:\\Users\\ddavi\\Source\\Repos\\SQL_CRUD_CREATOR\\EntityTest\\DomsScriptCreator.csproj"
+              "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\SqlCrudCreatorCore.csproj": {
+                "projectPath": "C:\\Users\\ddavi\\source\\repos\\SQL_CRUD_CREATOR\\SqlCrudCreatorCore\\SqlCrudCreatorCore.csproj"
               }
             }
           }
@@ -131,8 +109,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -161,20 +139,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
